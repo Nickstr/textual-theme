@@ -1,0 +1,17 @@
+.content {
+  line-height:1.7;
+  padding:10px 15px;
+  display:table-cell;
+  color:#f4f4f4;
+  font-size:.9em;
+  word-wrap: break-word;
+  width:100%;
+
+  a {
+    @include link;
+  }
+
+  .inline_nickname {
+    border-bottom:1px solid white;
+  }
+}

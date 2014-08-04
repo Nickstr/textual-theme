@@ -1,0 +1,162 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+#topic_bar, .message[type=topic] .content {
+  background: #1F2024;
+  padding: 15px;
+  color: white;
+  font-size: 13px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 400;
+  opacity: 0;
+  /* Set by JavaScript */
+  position: absolute; }
+
+#topic_bar a, #topic_bar .message[type=topic] .content, .message[type=topic] #topic_bar .content {
+  color: #BD4932;
+  text-decoration: none; }
+
+#topic_bar a:hover, #topic_bar .message[type=topic] .content, .message[type=topic] #topic_bar .content {
+  border-bottom: 2px solid #BD4932;
+  padding: 0 0 1px 0; }
+
+.img {
+  box-shadow: 0 1px 5px #22262d;
+  display: block;
+  max-width: 95%; }
+
+.line {
+  display: table;
+  margin: 0 0 1px 0;
+  width: 100%; }
+
+.line:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.line[highlight=true] {
+  border-right: 5px solid #105B63;
+  background: #2b2c32;
+  border-left: 1px solid #252A2E; }
+
+.time {
+  padding: 10px 15px;
+  display: table-cell;
+  background: #1F2024;
+  line-height: 1.7;
+  color: #4e515b;
+  font-size: 0.9em;
+  min-width: 100px;
+  width: 100px;
+  text-align: center; }
+
+.sender {
+  position: relative;
+  padding: 0 15px;
+  display: table-cell;
+  width: 125px;
+  min-width: 125px;
+  max-width: 125px;
+  overflow: hidden;
+  color: #f4f4f4;
+  font-size: 0.9em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  opacity: 0.5; }
+
+.sender:hover {
+  width: auto;
+  max-width: none;
+  text-overflow: ellipsis;
+  opacity: 1; }
+
+.message {
+  display: table-row; }
+
+.message[type=join] .content {
+  opacity: 0.5;
+  border-left: 3px solid #105B63;
+  font-style: italic; }
+
+.message[type=quit] .content {
+  opacity: 0.5;
+  border-left: 3px solid #BD4932;
+  font-style: italic; }
+
+.message[type=nick] .content {
+  opacity: 0.5;
+  border-left: 3px solid #105B63;
+  font-style: italic; }
+
+.message[type=topic] .content {
+  position: relative;
+  opacity: 1;
+  border-left: 1px solid #252A2E; }
+
+.content {
+  line-height: 1.7;
+  padding: 10px 15px;
+  display: table-cell;
+  color: #f4f4f4;
+  font-size: 0.9em;
+  word-wrap: break-word;
+  width: 100%; }
+
+.content a {
+  color: #BD4932;
+  text-decoration: none; }
+
+.content a:hover {
+  border-bottom: 2px solid #BD4932;
+  padding: 0 0 1px 0; }
+
+.content .inline_nickname {
+  border-bottom: 1px solid white; }
+
+p {
+  margin: 0 !important;
+  text-indent: 0 !important; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #252A2E;
+  font-family: 'Open Sans', 'Lucida Grande'; }

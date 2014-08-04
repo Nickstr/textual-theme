@@ -1,0 +1,21 @@
+.sender {
+  position: relative;
+  padding:0 15px;
+  display: table-cell;
+  width:125px;
+  min-width: 125px;
+  max-width:125px;
+  overflow: hidden;
+  color:#f4f4f4;
+  font-size:.9em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  opacity: .5;
+
+  &:hover {
+    width:auto;
+    max-width: none;
+    text-overflow: ellipsis;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,20 @@
+$element: 'topic_bar';
+
+#topic_bar {
+  background: $dark;
+  padding:15px;
+  color:white;
+  font-size:13px;
+  width:100%;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 400;
+  opacity: 0; /* Set by JavaScript */
+  position: absolute;
+
+  a {
+    @include link;
+  }
+}

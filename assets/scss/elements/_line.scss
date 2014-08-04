@@ -1,0 +1,15 @@
+.line {
+  @include clearfix;
+  display:table;
+  margin:0 0 1px 0;
+  width: 100%;
+
+
+
+  &[highlight=true] {
+    border-right:5px solid $positive;
+    background: lighten($dark, 5);
+    border-left:1px solid $charcoal;
+  }
+
+}

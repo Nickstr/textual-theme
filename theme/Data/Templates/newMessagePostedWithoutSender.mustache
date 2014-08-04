@@ -1,0 +1,18 @@
+{{! The 'line types' folder needs to be copied to a custom style to modify this file. }}
+
+<div ltype="{{lineType}}"
+
+{{^isRemoteMessage}}
+		mtype="{{nicknameType}}"
+{{/isRemoteMessage}}
+
+		command="{{rawCommand}}" 
+		class="line {{lineClassAttributeRepresentation}}" 
+		id="line-{{lineNumber}}"
+		time="{{lineRenderTime}}">
+
+    <div class="message" type="{{lineType}}">
+		<span class="time">{{formattedTimestamp}} </span>
+		<span class="content">{{{formattedMessage}}}</span>
+	</div>
+</div>

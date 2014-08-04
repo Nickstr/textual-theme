@@ -1,0 +1,29 @@
+.message {
+  display:table-row;
+
+  // Messages
+  &[type=join] .content {
+    opacity: .5;
+    border-left:3px solid $positive;
+    font-style: italic;
+  }
+
+  &[type=quit] .content {
+    opacity: .5;
+    border-left:3px solid $negative;
+    font-style: italic;
+  }
+
+  &[type=nick] .content {
+    opacity: .5;
+    border-left:3px solid $positive;
+    font-style: italic;
+  }
+
+  &[type=topic] .content {
+    @extend #topic_bar;
+    position: relative;
+    opacity: 1;
+    border-left:1px solid $charcoal;
+  }
+}
