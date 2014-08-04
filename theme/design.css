@@ -57,10 +57,11 @@ table {
   border-bottom: 2px solid #BD4932;
   padding: 0 0 1px 0; }
 
-.img {
+.img, .inlineimage {
   box-shadow: 0 1px 5px #22262d;
   display: block;
-  max-width: 95%; }
+  max-width: 95%;
+  padding: 10px 0 0 0; }
 
 .line {
   display: table;
@@ -100,7 +101,8 @@ table {
   font-size: 0.9em;
   white-space: nowrap;
   text-overflow: ellipsis;
-  opacity: 0.5; }
+  opacity: 0.5;
+  border-bottom: 1px solid #1F2024; }
 
 .sender:hover {
   width: auto;
@@ -138,7 +140,8 @@ table {
   color: #f4f4f4;
   font-size: 0.9em;
   word-wrap: break-word;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 1px solid #1F2024; }
 
 .content a {
   color: #BD4932;

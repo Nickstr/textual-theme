@@ -11,6 +11,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   opacity: .5;
+  border-bottom:1px solid $dark;
 
   &:hover {
     width:auto;
