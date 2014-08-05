@@ -1,9 +1,9 @@
 @mixin link {
-  color:$orange;
+  color:$negative;
   text-decoration: none;
 
   &:hover {
-    border-bottom:2px solid $orange;
+    border-bottom:1px solid $negative;
     padding:0 0 1px 0;
   }
 }

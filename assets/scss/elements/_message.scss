@@ -1,23 +1,49 @@
 .message {
   display:table-row;
+  font-weight: 300 !important;
+  letter-spacing: .05em;
 
   // Messages
-  &[type=join] .content {
-    opacity: .5;
-    border-left:3px solid $positive;
-    font-style: italic;
+  &[type=join] {
+    .time {
+      border-right:1px solid $positive;
+    }
+    .content {
+      color:$lightgrey;
+      font-style: italic;
+
+      &:before {
+        font-family: 'FontAwesome';
+        content: "\f105";
+        padding: 0 5px 0 0;
+        color:$positive;
+        opacity: 1;
+      }
+    }
   }
 
-  &[type=quit] .content {
-    opacity: .5;
-    border-left:3px solid $negative;
-    font-style: italic;
+  &[type=quit] {
+    .time {
+      border-right:1px solid $negative;
+    }
+    .content {
+      color:$lightgrey;
+      font-style: italic;
+
+      &:before {
+        font-family: 'FontAwesome';
+        content: "\f104";
+        padding: 0 5px 0 0;
+        color:$negative;
+      }
+    };
   }
 
-  &[type=nick] .content {
-    opacity: .5;
-    border-left:3px solid $positive;
-    font-style: italic;
+  &[type=nick] {
+    background: $dark;
+    .content {
+      border-right:3px solid $positive;
+    }
   }
 
   &[type=topic] .content {

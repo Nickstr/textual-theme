@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -50,11 +52,11 @@ table {
   position: absolute; }
 
 #topic_bar a, #topic_bar .message[type=topic] .content, .message[type=topic] #topic_bar .content {
-  color: #BD4932;
+  color: #AF4A00;
   text-decoration: none; }
 
 #topic_bar a:hover, #topic_bar .message[type=topic] .content, .message[type=topic] #topic_bar .content {
-  border-bottom: 2px solid #BD4932;
+  border-bottom: 1px solid #AF4A00;
   padding: 0 0 1px 0; }
 
 .img, .inlineimage {
@@ -74,7 +76,7 @@ table {
   clear: both; }
 
 .line[highlight=true] {
-  border-right: 5px solid #105B63;
+  border-right: 5px solid #1CA1AF;
   background: #2b2c32;
   border-left: 1px solid #252A2E; }
 
@@ -83,11 +85,12 @@ table {
   display: table-cell;
   background: #1F2024;
   line-height: 1.7;
-  color: #4e515b;
-  font-size: 0.9em;
+  color: #666976;
+  font-size: 0.7em;
   min-width: 100px;
   width: 100px;
-  text-align: center; }
+  text-align: center;
+  font-weight: 400; }
 
 .sender {
   position: relative;
@@ -101,8 +104,12 @@ table {
   font-size: 0.9em;
   white-space: nowrap;
   text-overflow: ellipsis;
-  opacity: 0.5;
-  border-bottom: 1px solid #1F2024; }
+  opacity: 0.6;
+  border-bottom: 1px solid #1F2024;
+  font-weight: 400; }
+
+.sender[mtype=myself] {
+  opacity: 1; }
 
 .sender:hover {
   width: auto;
@@ -111,27 +118,52 @@ table {
   opacity: 1; }
 
 .message {
-  display: table-row; }
+  display: table-row;
+  font-weight: 300 !important;
+  letter-spacing: 0.05em; }
+
+.message[type=join] .time {
+  border-right: 1px solid #1CA1AF; }
 
 .message[type=join] .content {
-  opacity: 0.5;
-  border-left: 3px solid #105B63;
+  color: #A6AFAC;
   font-style: italic; }
+
+.message[type=join] .content:before {
+  font-family: 'FontAwesome';
+  content: "\f105";
+  padding: 0 5px 0 0;
+  color: #1CA1AF;
+  opacity: 1; }
+
+.message[type=quit] .time {
+  border-right: 1px solid #AF4A00; }
 
 .message[type=quit] .content {
-  opacity: 0.5;
-  border-left: 3px solid #BD4932;
+  color: #A6AFAC;
   font-style: italic; }
 
+.message[type=quit] .content:before {
+  font-family: 'FontAwesome';
+  content: "\f104";
+  padding: 0 5px 0 0;
+  color: #AF4A00; }
+
+.message[type=nick] {
+  background: #1F2024; }
+
 .message[type=nick] .content {
-  opacity: 0.5;
-  border-left: 3px solid #105B63;
-  font-style: italic; }
+  border-right: 3px solid #1CA1AF; }
 
 .message[type=topic] .content {
   position: relative;
   opacity: 1;
   border-left: 1px solid #252A2E; }
+
+*[command='324'] {
+  border-bottom: 1px dotted #1CA1AF;
+  padding: 0 0 20px 0;
+  margin: 0 0 28px 0; }
 
 .content {
   line-height: 1.7;
@@ -144,15 +176,16 @@ table {
   border-bottom: 1px solid #1F2024; }
 
 .content a {
-  color: #BD4932;
+  color: #AF4A00;
   text-decoration: none; }
 
 .content a:hover {
-  border-bottom: 2px solid #BD4932;
+  border-bottom: 1px solid #AF4A00;
   padding: 0 0 1px 0; }
 
 .content .inline_nickname {
-  border-bottom: 1px solid white; }
+  font-weight: 400;
+  border-bottom: 1px solid #fff; }
 
 p {
   margin: 0 !important;
@@ -162,4 +195,4 @@ body {
   margin: 0;
   padding: 0;
   background: #252A2E;
-  font-family: 'Open Sans', 'Lucida Grande'; }
+  font-family: 'Lato', 'Open Sans', 'Lucida Grande' !important; }

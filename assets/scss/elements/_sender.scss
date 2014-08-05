@@ -10,8 +10,13 @@
   font-size:.9em;
   white-space: nowrap;
   text-overflow: ellipsis;
-  opacity: .5;
+  opacity: .6;
   border-bottom:1px solid $dark;
+  font-weight: 400;
+
+  &[mtype=myself] {
+    opacity: 1;
+  }
 
   &:hover {
     width:auto;
