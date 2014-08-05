@@ -1,5 +1,9 @@
 *[command='324'] {
   border-bottom:1px dotted $positive;
-  padding:0 0 20px 0;
+  padding:0 0 28px 0;
   margin:0 0 28px 0;
+
+  &+* {
+    border-top:1px solid $dark;
+  }
 }

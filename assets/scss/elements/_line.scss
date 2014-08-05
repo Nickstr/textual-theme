@@ -1,15 +1,17 @@
 .line {
   @include clearfix;
   display:table;
-  margin:0 0 1px 0;
+  margin:1px 0 0 0;
   width: 100%;
 
-
-
   &[highlight=true] {
-    border-right:5px solid $positive;
-    background: lighten($dark, 5);
-    border-left:1px solid $charcoal;
+    border-right:1px solid $positive;
+    background: $dark;
+    margin: 0;
+
+    & .time {
+      color:$positive
+    }
   }
 
 }

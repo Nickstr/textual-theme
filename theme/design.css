@@ -67,7 +67,7 @@ table {
 
 .line {
   display: table;
-  margin: 0 0 1px 0;
+  margin: 1px 0 0 0;
   width: 100%; }
 
 .line:after {
@@ -76,9 +76,12 @@ table {
   clear: both; }
 
 .line[highlight=true] {
-  border-right: 5px solid #1CA1AF;
-  background: #2b2c32;
-  border-left: 1px solid #252A2E; }
+  border-right: 1px solid #1CA1AF;
+  background: #1F2024;
+  margin: 0; }
+
+.line[highlight=true] .time {
+  color: #1CA1AF; }
 
 .time {
   padding: 10px 15px;
@@ -127,7 +130,8 @@ table {
 
 .message[type=join] .content {
   color: #A6AFAC;
-  font-style: italic; }
+  font-style: italic;
+  font-size: 0.7em; }
 
 .message[type=join] .content:before {
   font-family: 'FontAwesome';
@@ -141,19 +145,14 @@ table {
 
 .message[type=quit] .content {
   color: #A6AFAC;
-  font-style: italic; }
+  font-style: italic;
+  font-size: 0.7em; }
 
 .message[type=quit] .content:before {
   font-family: 'FontAwesome';
   content: "\f104";
   padding: 0 5px 0 0;
   color: #AF4A00; }
-
-.message[type=nick] {
-  background: #1F2024; }
-
-.message[type=nick] .content {
-  border-right: 3px solid #1CA1AF; }
 
 .message[type=topic] .content {
   position: relative;
@@ -162,8 +161,11 @@ table {
 
 *[command='324'] {
   border-bottom: 1px dotted #1CA1AF;
-  padding: 0 0 20px 0;
+  padding: 0 0 28px 0;
   margin: 0 0 28px 0; }
+
+*[command='324'] + * {
+  border-top: 1px solid #1F2024; }
 
 .content {
   line-height: 1.7;
@@ -190,6 +192,9 @@ table {
 p {
   margin: 0 !important;
   text-indent: 0 !important; }
+
+#loading_screen {
+  display: none; }
 
 body {
   margin: 0;

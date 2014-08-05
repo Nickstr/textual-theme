@@ -11,6 +11,7 @@
     .content {
       color:$lightgrey;
       font-style: italic;
+      font-size:.7em;
 
       &:before {
         font-family: 'FontAwesome';
@@ -29,6 +30,7 @@
     .content {
       color:$lightgrey;
       font-style: italic;
+      font-size:.7em;
 
       &:before {
         font-family: 'FontAwesome';
@@ -37,13 +39,6 @@
         color:$negative;
       }
     };
-  }
-
-  &[type=nick] {
-    background: $dark;
-    .content {
-      border-right:3px solid $positive;
-    }
   }
 
   &[type=topic] .content {
