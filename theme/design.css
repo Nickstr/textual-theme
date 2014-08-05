@@ -118,6 +118,11 @@ table {
   width: auto;
   max-width: none;
   text-overflow: ellipsis;
+  opacity: 1;
+  cursor: pointer; }
+
+.sender--emphasize {
+  color: #1CA1AF;
   opacity: 1; }
 
 .message {
@@ -190,7 +195,7 @@ table {
 
 .content .inline_nickname {
   font-weight: 400;
-  border-bottom: 1px solid #fff; }
+  cursor: pointer; }
 
 p {
   margin: 0 !important;

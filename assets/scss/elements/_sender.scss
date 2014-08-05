@@ -23,7 +23,15 @@
     max-width: none;
     text-overflow: ellipsis;
     opacity: 1;
+    cursor: pointer;
+  }
+
+  &--emphasize {
+    color:$positive;
+    opacity: 1;
   }
 }
+
+
 
 
