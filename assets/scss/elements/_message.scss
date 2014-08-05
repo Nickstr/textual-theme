@@ -41,6 +41,10 @@
     };
   }
 
+  &[type=nick] .content {
+    font-style: italic;
+  }
+
   &[type=topic] .content {
     @extend #topic_bar;
     position: relative;
