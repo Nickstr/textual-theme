@@ -52,12 +52,13 @@ table {
   position: absolute; }
 
 #topic_bar a, #topic_bar .message[type=topic] .content, .message[type=topic] #topic_bar .content {
-  color: #AF4A00;
-  text-decoration: none; }
-
-#topic_bar a:hover, #topic_bar .message[type=topic] .content, .message[type=topic] #topic_bar .content {
+  color: #f4f4f4;
+  text-decoration: none;
   border-bottom: 1px solid #AF4A00;
   padding: 0 0 1px 0; }
+
+#topic_bar a:hover, #topic_bar .message[type=topic] .content, .message[type=topic] #topic_bar .content {
+  color: #AF4A00; }
 
 .img, .inlineimage {
   box-shadow: 0 1px 5px #22262d;
@@ -109,12 +110,15 @@ table {
   text-overflow: ellipsis;
   opacity: 0.6;
   border-bottom: 1px solid #1F2024;
-  font-weight: 400; }
+  font-weight: 400;
+  -webkit-transition: color 0.2s ease, opacity 0.2s ease;
+          transition: color 0.2s ease, opacity 0.2s ease; }
 
 .sender[mtype=myself] {
   opacity: 1; }
 
 .sender:hover {
+  min-width: 125px;
   width: auto;
   max-width: none;
   text-overflow: ellipsis;
@@ -134,7 +138,7 @@ table {
   border-right: 1px solid #1CA1AF; }
 
 .message[type=join] .content {
-  color: #A6AFAC;
+  color: #f4f4f4;
   font-style: italic;
   font-size: 0.7em; }
 
@@ -149,7 +153,7 @@ table {
   border-right: 1px solid #AF4A00; }
 
 .message[type=quit] .content {
-  color: #A6AFAC;
+  color: #f4f4f4;
   font-style: italic;
   font-size: 0.7em; }
 
@@ -186,12 +190,13 @@ table {
   border-bottom: 1px solid #1F2024; }
 
 .content a {
-  color: #AF4A00;
-  text-decoration: none; }
-
-.content a:hover {
+  color: #f4f4f4;
+  text-decoration: none;
   border-bottom: 1px solid #AF4A00;
   padding: 0 0 1px 0; }
+
+.content a:hover {
+  color: #AF4A00; }
 
 .content .inline_nickname {
   font-weight: 400;

@@ -96,12 +96,12 @@ function createHoverEvents() {
     var users = documentBody.getElementsByClassName('sender');
     var inlineUsers = documentBody.getElementsByClassName('inline_nickname');
 
-    [].forEach.call(users, function (user) {
+    Array.prototype.forEach.call(users, function (user) {
         user.addEventListener("mouseover", emphasizeUserMessages);
         user.addEventListener("mouseout", normalizeUserMessages);
     });
 
-    [].forEach.call(inlineUsers, function (user) {
+    Array.prototype.forEach.call(inlineUsers, function (user) {
         user.addEventListener("mouseover", emphasizeUserMessages);
         user.addEventListener("mouseout", normalizeUserMessages);
     });
@@ -110,7 +110,7 @@ function createHoverEvents() {
 function emphasizeUserMessages(e) {
     var messages = getAllElementsWithAttribute('nickname', e.srcElement.getAttribute('nickname'));
 
-    [].forEach.call(messages, function (message) {
+    Array.prototype.forEach.call(messages, function (message) {
         message.classList.add("sender--emphasize");
     });
 }
@@ -118,7 +118,7 @@ function emphasizeUserMessages(e) {
 function normalizeUserMessages(e) {
     var messages = getAllElementsWithAttribute('nickname', e.srcElement.getAttribute('nickname'));
 
-    [].forEach.call(messages, function (message) {
+    Array.prototype.forEach.call(messages, function (message) {
         message.classList.remove("sender--emphasize");
     });
 }

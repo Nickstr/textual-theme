@@ -6,7 +6,7 @@
   min-width: 125px;
   max-width:125px;
   overflow: hidden;
-  color:#f4f4f4;
+  color:$lightgrey;
   font-size:.9em;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -14,11 +14,15 @@
   border-bottom:1px solid $dark;
   font-weight: 400;
 
+  // Effects
+  transition: color 0.2s ease, opacity 0.2s ease;
+
   &[mtype=myself] {
     opacity: 1;
   }
 
   &:hover {
+    min-width: 125px;
     width:auto;
     max-width: none;
     text-overflow: ellipsis;
